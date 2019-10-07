@@ -13,7 +13,7 @@ class EnterPinViewController: UIViewController {
     @IBOutlet weak var pinField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pinField.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
     

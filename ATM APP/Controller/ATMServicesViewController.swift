@@ -79,6 +79,7 @@ class ATMServicesViewController: UIViewController {
             
             let sendAction = UIAlertAction(title: "Proceed", style: .default) { (action) in
                 let textfield = alert.textFields![0] as UITextField
+                textfield.isSecureTextEntry = true
                 if  textfield.text != "" && textfield.text!.count == 4  && textfield.text! == self.pin{
                     self.openBalanceEnquiryScreen()
                 } else{
